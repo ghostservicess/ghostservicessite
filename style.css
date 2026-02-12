@@ -74,6 +74,15 @@ body {
   box-shadow: 0 0 20px #00f7ff;
 }
 
+/* Telegram Button */
+.btn-telegram {
+  border: 1px solid #2ca5e0;
+}
+.btn-telegram:hover {
+  background: #2ca5e0;
+  box-shadow: 0 0 20px #2ca5e0;
+}
+
 /* Hero */
 .hero {
   text-align: center;
