@@ -9,21 +9,22 @@
 </head>
 <body>
 
+<div class="cursor-glow"></div>
+
 <header>
     <div class="logo">GHOST<span>X</span></div>
     <nav>
         <a href="#products">Ürünler</a>
         <a href="#faq">SSS</a>
+        <a href="#" id="cartBtn">Sepet (0)</a>
         <a href="https://discord.gg/yYRSr76he2" target="_blank" class="btn-nav">Discord</a>
     </nav>
 </header>
 
 <section class="hero">
     <h1>Premium Yazılım Ürünleri</h1>
-    <p>Güvenilir, stabil ve güncel ürünler</p>
-    <a href="https://discord.gg/yYRSr76he2" target="_blank" class="btn-main">
-        Discord'a Katıl
-    </a>
+    <p>Güçlü. Stabil. Profesyonel.</p>
+    <a href="#products" class="btn-main">Ürünleri Gör</a>
 </section>
 
 <section id="products" class="products">
@@ -35,14 +36,18 @@
             <h3>Haftalık Paket</h3>
             <p>7 Günlük Premium Erişim</p>
             <div class="price">500 TL</div>
-            <a href="https://discord.gg/yYRSr76he2" target="_blank" class="btn-buy">Satın Al</a>
+            <button onclick="addToCart('Haftalık Paket',500)" class="btn-buy">
+                Sepete Ekle
+            </button>
         </div>
 
         <div class="card highlight">
             <h3>Aylık Paket</h3>
             <p>30 Günlük Premium Erişim</p>
             <div class="price">1200 TL</div>
-            <a href="https://discord.gg/yYRSr76he2" target="_blank" class="btn-buy">Satın Al</a>
+            <button onclick="addToCart('Aylık Paket',1200)" class="btn-buy">
+                Sepete Ekle
+            </button>
         </div>
 
     </div>
@@ -53,18 +58,27 @@
 
     <div class="faq-box">
         <h4>Nasıl satın alırım?</h4>
-        <p>Discord sunucumuza katılıp destek açmanız yeterlidir.</p>
-    </div>
-
-    <div class="faq-box">
-        <h4>Ödeme sonrası teslim süresi?</h4>
-        <p>Genellikle 5-10 dakika içinde aktif edilir.</p>
+        <p>Sepete ekleyip Discord üzerinden ödeme yapabilirsiniz.</p>
     </div>
 </section>
+
+<!-- SEPET MODAL -->
+<div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+        <h3>Sepetiniz</h3>
+        <ul id="cartItems"></ul>
+        <div id="cartTotal"></div>
+        <a href="https://discord.gg/yYRSr76he2" target="_blank" class="btn-main">
+            Satın Al (Discord)
+        </a>
+        <button onclick="closeCart()" class="close-btn">Kapat</button>
+    </div>
+</div>
 
 <footer>
     © 2026 Ghost Services
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
