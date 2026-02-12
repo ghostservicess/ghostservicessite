@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ghost Services</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Services - Ürünler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">GHOST<span>X</span></div>
+<header class="navbar">
+    <div class="brand">GHOST<span>SERVICES</span></div>
     <nav>
-        <a href="#urunler">Ürünler</a>
+        <a href="/">Ana Sayfa</a>
+        <a href="#products">Ürünler</a>
         <a href="#sss">SSS</a>
-        <a href="https://discord.gg/yYRSr76he2" target="_blank" class="btn-nav">Discord</a>
+        <a href="https://discord.gg/yYRSr76he2" class="btn-nav" target="_blank">Discord</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Premium Yazılım Hizmetleri</h1>
-    <p>Güçlü. Stabil. Profesyonel.</p>
-    <a href="https://discord.gg/yYRSr76he2" target="_blank" class="btn-main">Discord'a Katıl</a>
+    <div class="hero-text">
+        <h1>Premium Yazılım Ürünleri</h1>
+        <p>Güvenilir, stabil ve güncel ürünler</p>
+        <a href="https://discord.gg/yYRSr76he2" class="btn-main" target="_blank">Discord’a Katıl</a>
+    </div>
 </section>
 
-<section id="urunler" class="products">
-    <h2>Ürün Paketleri</h2>
+<section id="products" class="products-section">
+    <h2>Ürünler</h2>
+    
+    <div class="products-grid">
+        
+        <!-- ÜRÜN 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/300x180" alt="Ürün Resmi">
+            </div>
+            <div class="product-info">
+                <h3>Ürün Adı 1</h3>
+                <p>Bu ürün açıklaması burada yer alır.</p>
+                <div class="price">500 TL / Haftalık</div>
+                <a href="https://discord.gg/yYRSr76he2" class="btn-buy" target="_blank">Satın Al</a>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>Haftalık Paket
+        <!-- ÜRÜN 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/300x180" alt="Ürün Resmi">
+            </div>
+            <div class="product-info">
+                <h3>Ürün Adı 2</h3>
+                <p>Bu ürün açıklaması burada yer alır.</p>
+                <div class="price">1200 TL / Aylık</div>
+                <a href="https://discord.gg/yYRSr76he2" class="btn-buy" target="_blank">Satın Al</a>
+            </div>
+        </div>
+
+        <!-- ÜRÜN 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/300x180" alt="Ürün Resmi">
+            </div>
+            <div class="product-info">
+                <h3>Ürün Adı 3</h3>
+                <p>Bu ürün açıklaması burada yer alır.</p>
+                <div class="price">1200 TL / Aylık</div>
+                <a href="https://discord.gg/yYRSr76he2" class="btn-buy" target="_blank">Satın Al</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="sss" class="faq-section">
+    <h2>Sıkça Sorulan Sorular</h2>
+    <div class="faq">
+        <strong>Nasıl satın alırım?</strong>
+        <p>Discord üzerinden destek ekibine ulaşmanız yeterlidir.</p>
+    </div>
+    <div class="faq">
+        <strong>Ödeme seçenekleri nelerdir?</strong>
+        <p>Kredi kartı, havale ve cüzdan.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Ghost Services</p>
+</footer>
+
+</body>
+</html>
