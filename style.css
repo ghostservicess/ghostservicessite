@@ -1,78 +1,101 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0a0a12;
-    color: white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10%;
-    background: #111;
+body{
+    font-family: 'Orbitron', sans-serif;
+    background:#05050d;
+    color:white;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(0,0,0,0.8);
+    position:sticky;
+    top:0;
 }
 
-.logo {
-    font-weight: bold;
+.logo{
+    font-size:24px;
+    font-weight:700;
 }
 
-.hero {
-    text-align: center;
-    padding: 120px 20px;
+.logo span{
+    color:#00f7ff;
+    text-shadow:0 0 10px #00f7ff;
 }
 
-.hero h1 {
-    font-size: 42px;
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
 }
 
-.btn, .btn-main {
-    padding: 12px 24px;
-    background: #a855f7;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
+.btn-nav{
+    padding:8px 16px;
+    border:1px solid #a855f7;
+    border-radius:6px;
+    transition:0.3s;
 }
 
-.products {
-    padding: 60px 10%;
-    text-align: center;
+.btn-nav:hover{
+    background:#a855f7;
+    box-shadow:0 0 15px #a855f7;
 }
 
-.card {
-    display: inline-block;
-    width: 280px;
-    background: #1a1a25;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 12px;
+/* HERO */
+.hero{
+    text-align:center;
+    padding:120px 20px;
 }
 
-.price {
-    margin: 15px 0;
-    font-weight: bold;
-    color: #00f7ff;
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+    text-shadow:0 0 20px #a855f7;
 }
 
-.big {
-    font-size: 28px;
+.hero p{
+    opacity:0.7;
+    margin-bottom:25px;
 }
 
-.product-detail {
-    padding: 80px 10%;
-    text-align: center;
+.btn-main{
+    padding:14px 28px;
+    background:#a855f7;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+    box-shadow:0 0 20px #a855f7;
+    transition:0.3s;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    margin-top: 50px;
+.btn-main:hover{
+    transform:scale(1.05);
 }
+
+/* PRODUCTS */
+.products{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.products h2{
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05)
