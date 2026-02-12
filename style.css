@@ -65,6 +65,15 @@ body {
   box-shadow: 0 0 20px #a855f7;
 }
 
+/* CheatGlobal Button */
+.btn-cheat {
+  border: 1px solid #00f7ff;
+}
+.btn-cheat:hover {
+  background: #00f7ff;
+  box-shadow: 0 0 20px #00f7ff;
+}
+
 /* Hero */
 .hero {
   text-align: center;
@@ -114,6 +123,7 @@ body {
 }
 
 .card {
+  position: relative;
   background: rgba(255, 255, 255, 0.05);
   padding: 28px;
   border-radius: 16px;
@@ -148,6 +158,30 @@ body {
 
 .btn-buy:hover {
   box-shadow: 0 0 20px #a855f7;
+}
+
+/* Product Image */
+.product-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #00f7ff;
+  color: black;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 0 15px #00f7ff;
 }
 
 /* FAQ */
